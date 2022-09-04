@@ -1,3 +1,4 @@
+# Please run in the project folder
 echo "Run export"
 npm run export
 cd ./docs

@@ -1,3 +1,4 @@
+# Please run in the project folder
 rm -rf node_modules
 rm package-lock.json
 
