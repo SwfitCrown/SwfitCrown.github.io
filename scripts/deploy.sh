@@ -1,4 +1,10 @@
 # Please run in the project folder
+echo "Clean old"
+rm -rf ./docs
+git add .
+git commit -m "clean contents"
+git push
+
 echo "Run export"
 npm run export
 cd ./docs
