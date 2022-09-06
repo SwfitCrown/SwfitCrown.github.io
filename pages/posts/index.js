@@ -1,6 +1,6 @@
 import Header from "../../components/header"
 import Footer from "../../components/footer"
-import getPostsList from "../../components/getPostsList";
+import {getBlogsList,getBlogs} from "../../components/getBlogs";
 import ShowList from "../../components/showList";
 
 export default function Home(props) {
@@ -14,7 +14,9 @@ export default function Home(props) {
 }
 
 export async function getStaticProps(){
-   const list = getPostsList();
+   const list = getBlogsList();
+   const blogs = getBlogs();
+   console.log(blogs);
    return {
       props:{list}
    };

@@ -1,6 +1,6 @@
 ---
-title: Example Post
-slug: example_post
+title: Example
+slug: example
 published: 2022-09-06
 description: This is some description
 ---
