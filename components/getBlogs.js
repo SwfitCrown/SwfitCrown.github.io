@@ -27,17 +27,16 @@ export function getBlogContent(path){
 /**
  * @function This function get all md and mdx file which in contents folder.
  */
-export async function getBlogs(){
+export default async function getBlogs(){
    if(blogs.length==0){
-      const list = getBlogsList();
+      const list = await getBlogsList();
       const files = list.map(
          (filename)=>getBlogContent(path.join('./contents',filename))
       );
-      for (var file in files){
-         const mdx = await bundleMDX({source:file});
+      for (var i=0;i< files.length;i++){
+         const mdx = await bundleMDX({source:files[i]});
          blogs.push(mdx);
       }
    }
-   console.log(blogs);
    return blogs;
 }

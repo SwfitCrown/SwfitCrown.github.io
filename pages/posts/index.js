@@ -1,23 +1,21 @@
 import Header from "../../components/header"
 import Footer from "../../components/footer"
-import {getBlogsList,getBlogs} from "../../components/getBlogs";
+import getBlogs from "../../components/getBlogs";
 import ShowList from "../../components/showList";
 
 export default function Home(props) {
    return (
     <div>
       <Header/>
-         <ShowList list={props.list}/>
+         <ShowList blogs={props.blogs}/>
       <Footer/>
     </div>
    )
 }
 
 export async function getStaticProps(){
-   const list = getBlogsList();
-   const blogs = getBlogs();
-   console.log(blogs);
+   const blogs = await getBlogs();
    return {
-      props:{list}
+      props:{blogs},
    };
- }
+}

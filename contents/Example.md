@@ -1,9 +1,9 @@
 ---
 title: Example
 slug: example
-published: 2022-09-06
 description: This is some description
 ---
+
 
 # Markdown example
 This is an ***markdown*** example.

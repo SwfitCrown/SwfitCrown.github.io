@@ -2,11 +2,11 @@ import Link from "next/link";
 import path from 'path';
 
 export default function showList(props){
-   const str = props.list.map(
-      (filename,idx)=>
+   const str = props.blogs.map(
+      (blog,idx)=>
          <div className="text-center" key={idx}>
-            <Link href={path.join('/posts',filename)} >
-               <a><h1>{filename.substring(0,filename.length-3)}</h1></a>
+            <Link href={path.join('/posts',blog.frontmatter.slug)} >
+               <a><h1>{blog.frontmatter.title}</h1></a>
             </Link>
          </div>
    );
