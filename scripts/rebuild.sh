@@ -7,5 +7,5 @@ rm package-lock.json
 
 # use domestic source
 # npm config set registry [https://registry.npm.taobao.org](https://link.jianshu.com/?t=https://registry.npm.taobao.org)
-
+npm rebuild
 npm install
