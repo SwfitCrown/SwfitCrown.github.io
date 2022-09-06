@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {getMDXComponent} from 'mdx-bundler/client'
 
-export default function showContent(props){
+export default function ShowContent(props){
    var blog;
    console.log(props.slug);
    for(var i=0;i<props.blogs.length;i++){
