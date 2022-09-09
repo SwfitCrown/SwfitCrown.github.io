@@ -1,7 +1,6 @@
 ---
 title: Durable Write Cache in Flash Memory SSD for Relational and NoSQL Databases
 slug: paper_reading_22_09_09
-published: 2022-09-09
 description: A durable cache design made by a Tantalum capacitors, which makes DRAM cache durability.
 keywords: Durability, SSD, Durable Cache, 
 ---
