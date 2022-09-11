@@ -20,7 +20,13 @@ export function getBlogContent(path){
  */
  export function getBlogsList(){
    const fs = require('fs');
-   const list = fs.readdirSync('./contents','utf-8');
+   const list = fs.readdirSync('./contents','utf-8')
+   .filter(
+      (name,idx)=>{
+         return name != 'courses';
+      });
+
+   console.log(list);
    return list;
 }
 
